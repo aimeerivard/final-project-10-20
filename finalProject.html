@@ -6,10 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./finalProject.css">
 </head>
-<body>
+<body onload="filterButton()">
     <div id="headerDiv">
         <h1>Bayleaf</h1>
-        <h3>Vegan food in the Bay Area</h3>
+        <p>vegan food in the bay area</p>
     </div>
     <div id="wrap">
         <h2>Add a new restaurant</h2>
@@ -65,19 +65,18 @@
                 </div>
                 <button onclick="addCard()">Submit</button>
             </aside>
-            
         </div>
     </div>
     <nav>
         Filter by 
-        <select name="Location" id="location" class="filterBar">
+        <select oninput="filterButton()" name="Location" id="filterLocation" class="filterBar">
             <option value="location">Location</option>
             <option value="southBay">South Bay</option>
             <option value="eastBay">East Bay</option>
             <option value="northBay">North Bay</option>
             <option value="peninsula">Peninsula</option>
         </select>
-        <select name="cuisine" id="cuisine" class="filterBar">
+        <select oninput="filterButton()" name="cuisine" id="filterCuisine" class="filterBar">
             <option value="cuisine">Cuisine</option>
             <option value="healthy">Health Food</option>
             <option value="fastFood">Fast Food</option>

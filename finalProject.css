@@ -1,101 +1,131 @@
+@font-face {
+  font-family: quicksand;
+  src: url(./Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: lobster;
+  src: url(./Lobster/Lobster-Regular.ttf);
+}
+
 body {
-    border: 1px black solid;
-    font-family: sans-serif;
-    background-color: rgb(236, 236, 236);
+  border: 1px black solid;
+  font-family: quicksand;
+  background-color: rgb(236, 236, 236);
 }
 
 .column {
-    float: left;
-  }
-
-#newEntry, #restCard {
-    display: flex;
+  float: left;
 }
 
-nav, #wrap, #restCard, #headerDiv {
-    margin: 5px;
-    padding: 10px;
+#newEntry,
+#restCard {
+  display: flex;
+}
+
+nav,
+#wrap,
+#restCard,
+#headerDiv {
+  margin: 5px;
+  padding: 15px;
 }
 
 #headerDiv {
-    background-color: lemonchiffon;
+  background-color: lemonchiffon;
 }
 
 nav {
-    border-top: 1px black solid;
+  border-top: 1px black solid;
 }
 
 .arrayCard {
-    display: flex;
-    border-top: 1px black solid;
-    margin: 5px;
-    padding: 10px;
+  display: flex;
+  border-top: 1px black solid;
+  margin: 5px;
+  padding: 10px;
 }
 
-h1, h2 {
-    text-transform: uppercase;
-    font-weight: normal;
-    border-bottom: 1px black solid;
-    padding-left: 5px;
+h1,
+h2 {
+  border-bottom: 1px black solid;
+  padding-left: 5px;
+}
+
+h1 {
+  margin: 0 auto;
+  font-weight: lighter;
+  font-size: 45px;
+  font-family: lobster;
+  padding-bottom: 2px;
 }
 
 h2 {
-    font-size: smaller;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: smaller;
 }
 
-h3 {
-    font-size: medium;
-    font-weight: lighter;
-    padding-left: 7px;
+p {
+  margin: 0 auto;
+  font-size: medium;
+  font-weight: lighter;
+  padding-left: 7px;
+  padding-top: 5px;
 }
 
-section, #arraySection {
-    border-right: 1px black solid;
-    margin: 10px;
-    padding: 10px;
-    width: 22%;
+section,
+#arraySection {
+  border-right: 1px black solid;
+  margin: 10px;
+  padding: 10px;
+  width: 22%;
 }
 
 aside {
-    padding: 22px;
+  padding: 22px;
 }
 
 select {
-    border: 1px black solid;
-    width: 153px;
+  border: 1px black solid;
+  width: 153px;
 }
 
 button {
-    border: 1px black solid;
-    background-color: rgb(108, 180, 130);
-    padding: 5px;
-    margin-top: 10px;
-    float: right;
+  border: 1px black solid;
+  background-color: rgb(108, 180, 130);
+  padding: 5px;
+  margin-top: 10px;
+  float: right;
 }
 
 .filterBar {
-    background-color: lemonchiffon;
+  background-color: lemonchiffon;
 }
 
-nav, button, select, #newEntry, #restCard {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: smaller;
+nav,
+button,
+select,
+#newEntry,
+#restCard {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: smaller;
 }
 
 #restCardTitle {
-    font-size: large;
-    text-transform: uppercase;
+  font-size: large;
+  text-transform: uppercase;
 }
 
 td {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .column1 {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 #areaTitle {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
