@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./finalProject.css">
+</head>
+<body>
+    <div id="headerDiv">
+        <h1>Bayleaf</h1>
+        <h3>Vegan food in the Bay Area</h3>
+    </div>
+    <div id="wrap">
+        <h2>Add a new restaurant</h2>
+        <div id="newEntry">
+            <section class="column">
+                <table>
+                    <tr>
+                        <td class="column1">Name</td>
+                        <td><input id="name" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Address</td>
+                        <td><input id="address" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Website</td>
+                        <td><input id="website" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Location</td>
+                        <td>
+                            <select name="Location" id="location">
+                                <option value="location">Location</option>
+                                <option value="southBay">South Bay</option>
+                                <option value="eastBay">East Bay</option>
+                                <option value="northBay">North Bay</option>
+                                <option value="peninsula">Peninsula</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="column1">Cuisine</td>
+                        <td>
+                            <select name="cuisine" id="cuisine">
+                                <option value="cuisine">Cuisine</option>
+                                <option value="healthy">Health Food</option>
+                                <option value="fastFood">Fast Food</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="asian">Asian</option>
+                                <option value="mexican">Mexican</option>
+                                <option value="indian">Indian</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <aside>
+                <div id="areaTitle">
+                    Description
+                </div>
+                <div>
+                    <textarea id="description" name="" id="" cols="30" rows="7"></textarea>
+                </div>
+                <button onclick="addCard()">Submit</button>
+            </aside>
+            
+        </div>
+    </div>
+    <nav>
+        Filter by 
+        <select name="Location" id="location" class="filterBar">
+            <option value="location">Location</option>
+            <option value="southBay">South Bay</option>
+            <option value="eastBay">East Bay</option>
+            <option value="northBay">North Bay</option>
+            <option value="peninsula">Peninsula</option>
+        </select>
+        <select name="cuisine" id="cuisine" class="filterBar">
+            <option value="cuisine">Cuisine</option>
+            <option value="healthy">Health Food</option>
+            <option value="fastFood">Fast Food</option>
+            <option value="pizza">Pizza</option>
+            <option value="asian">Asian</option>
+            <option value="mexican">Mexican</option>
+            <option value="indian">Indian</option>
+        </select>
+    </nav>
+    <div id="list">
+        <!-- <div id="restCard">
+            <section class="column">
+                <div>Restaurant Name</div>
+                <div>Restaurant Address</div>
+                <div>www.restaurant.com</div>
+            </section>
+            <aside>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+            culpa qui officia deserunt mollit anim id est laborum.
+            </aside>
+        </div> -->
+    </div>
+    <script src="./finalProject.js"></script>
+</body>
+</html>
