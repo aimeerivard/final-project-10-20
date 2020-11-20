@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./finalProject.css">
 </head>
-<body onload="filterButton()">
+<body onload="renderRestCard()">
     <div id="headerDiv">
         <h1>Bayleaf</h1>
         <p>vegan food in the bay area</p>
@@ -69,14 +69,14 @@
     </div>
     <nav>
         Filter by 
-        <select oninput="filterButton()" name="Location" id="filterLocation" class="filterBar">
+        <select oninput="renderRestCard()" name="Location" id="filterLocation" class="filterBar">
             <option value="location">Location</option>
             <option value="southBay">South Bay</option>
             <option value="eastBay">East Bay</option>
             <option value="northBay">North Bay</option>
             <option value="peninsula">Peninsula</option>
         </select>
-        <select oninput="filterButton()" name="cuisine" id="filterCuisine" class="filterBar">
+        <select oninput="renderRestCard()" name="cuisine" id="filterCuisine" class="filterBar">
             <option value="cuisine">Cuisine</option>
             <option value="healthy">Health Food</option>
             <option value="fastFood">Fast Food</option>
